@@ -17,3 +17,7 @@ TECH stack: `Socket.io`, `express`, `mongodb`, `nodejs`
 
 * `message-room` : 
   * Used to send message in a group chat or private chat (as individual socket id are also a room in sockt.io).
+
+<hr>
+ ⚠️  Note:<br>
+ This is only the backend, to use it, frontend that would utilize the above events using socket.io client library is required.
