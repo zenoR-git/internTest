@@ -50,11 +50,6 @@ function sortRoomMessagesByDate(messages){
 //socket connection
 io.on('connection',(socket)=>{
 
-    socket.on('new-user',async ()=>{
-        const member = await User.find()
-        io.emit('new-user', member)
-    })
-
     socket.on('join-room', async (newRoom, prevRoom) => {
         socket.join(newRoom)
         socket.leave(prevRoom)
